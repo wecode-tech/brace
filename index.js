@@ -7457,7 +7457,7 @@ var Mode = function() {
                 name: word,
                 value: word,
                 score: 0,
-                meta: "keyword"
+                meta: "关键字"
             };
         });
     };

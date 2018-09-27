@@ -1778,7 +1778,7 @@ ace.define("ace/autocomplete/text_completer",["require","exports","module","ace/
                 caption: word,
                 value: word,
                 score: wordScore[word],
-                meta: "local"
+                meta: "变量"
             };
         }));
     };
