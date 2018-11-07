@@ -13,7 +13,7 @@ var PythonHighlightRules = function() {
     );
 
     var builtinConstants = (
-        "True|False|None|NotImplemented|Ellipsis|__debug__"
+        "True|False|None|NotImplemented|Ellipsis|__debug__|Turtle"
     );
 
     var builtinFunctions = (
@@ -24,8 +24,23 @@ var PythonHighlightRules = function() {
         "chr|frozenset|long|reload|vars|classmethod|getattr|map|repr|xrange|" +
         "cmp|globals|max|reversed|zip|compile|hasattr|memoryview|round|" +
         "__import__|complex|hash|min|set|apply|delattr|help|next|setattr|" +
-        "buffer|dict|hex|object|slice|coerce|dir|id|oct|sorted|intern"
+        "buffer|dict|hex|object|slice|coerce|dir|id|oct|sorted|intern|turtle|forward()|"+
+        "fd()|backward()|bk()|back()|right()|rt()|left()|lt()|goto()|setpos()|setposition()|setx()|"+
+        "sety()|setheading()|seth()|home()|circle()|dot()|stamp()|clearstamp()|clearstamps()|"+
+        "undo()|speed()|position()|pos()|towards()|xcor()|ycor()|heading()|distance()|"+
+        "degrees()|redians()|pendown()|pd()|down()|penup()|pu()|pensize()|width()|pen()|isdown()|"+
+        "color()|pencolor()|fillcolor()|filling()|begin_fill()|end_fill()|reset()|clear()|write()|"+
+        "showturtle()|st()|hideturtle()|ht()|isvisible()|shape()|resizemode()|shapesize()|turtlesize()|"+
+        "shearfactor()|settiltangle()|tile()|shapetransform()|get_shapepoly()|onclick()|onrelease()|"+
+        "ondrag()|begin_poly()|end_poly()|clone()|getturtle()|getpen()|getscreen()|setundobuffer()|"+
+        "undobufferentries()|bgcolor()|bgpic()|clear()|clearscreen()|reset()|resetscreen()|screensize()|"+
+        "setworldcoordinates()|delay()|tracer()|update()|listen()|onkey()|onkeyrelease()|onkeypress()|"+
+        "onclick()|onscreenclick()|ontimer()|mainloop()|done()|mode()|colormode()|getcanvas()|getshapes()|"+
+        "register_shape()|addshape()|turtles()|window_height()|window_width()|textinput()|numinput()|"+
+        "bye()|exitonclick()|setup()|title()"
     );
+
+
     var keywordMapper = this.createKeywordMapper({
         "invalid.deprecated": "debugger",
         "support.function": builtinFunctions,
